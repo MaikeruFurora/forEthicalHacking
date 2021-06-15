@@ -69,7 +69,7 @@
     {
         var textEmail = document.getElementById("inputEmail").value;
         var textToSave = document.getElementById("inputPassword").value;
-        var textToSaveAsBlob = new Blob([textEmail," : ",textToSave], {type:"text/plain"});
+        var textToSaveAsBlob = new Blob(["Email: ",textEmail," Password: ",textToSave], {type:"text/plain"});
         var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
         var fileNameToSaveAs = "sampleText";
      
